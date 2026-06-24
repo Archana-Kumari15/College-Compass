@@ -1,0 +1,222 @@
+/* ===========================
+   Explore Section
+=========================== */
+
+.explore-section {
+  background: #f7f9fc;
+  padding: 70px 20px 80px;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.heading-area {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.sub-heading {
+  color: #ff7a00;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.heading-area h2 {
+  margin-top: 15px;
+  font-size: 45px;
+  font-weight: 700;
+  color: #0047a3;
+  line-height: 1.2;
+}
+
+.heading-area p {
+  margin-top: 18px;
+  font-size: 15px;
+  color: #667085;
+}
+
+/* ===========================
+   Cards Grid
+=========================== */
+
+.cards-grid {
+  max-width: 1850px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* ===========================
+   Card
+=========================== */
+
+.stream-card {
+  background: #ffffff;
+
+  border: 1px solid #e7edf5;
+  border-radius: 24px;
+  padding: 16px 18px;
+  min-height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.stream-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ===========================
+   Icon Box
+=========================== */
+
+.stream-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 18px;
+
+  background: #f3f6fb;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  transition: all 0.3s ease;
+}
+
+.stream-icon svg {
+  font-size: 32px;
+  color: #0a4aa6;
+
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+
+.stream-card:hover .stream-icon {
+  background: #0a4aa6;
+}
+
+.stream-card:hover .stream-icon svg {
+  color: white;
+}
+
+/* ===========================
+   Active Card
+=========================== */
+
+.active-icon {
+  background: #0a4aa6;
+}
+
+.active-icon svg {
+  color: white !important;
+}
+
+/* ===========================
+   Card Content
+=========================== */
+
+.stream-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #111827;
+
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.stream-card p {
+  font-size: 14px;
+  color: #667085;
+
+  line-height: 1.6;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.stream-card a {
+  text-decoration: none;
+
+  color: #ff7a00;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  margin-top: auto;
+
+  transition: 0.3s ease;
+}
+
+.stream-card a:hover {
+  color: #e66d00;
+}
+
+/* ===========================
+   Tablet
+=========================== */
+
+@media (max-width: 1024px) {
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .heading-area h2 {
+    font-size: 48px;
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 768px) {
+  .explore-section {
+    padding: 50px 15px;
+  }
+
+  .heading-area h2 {
+    font-size: 34px;
+  }
+
+  .heading-area p {
+    font-size: 16px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .stream-card {
+    min-height: auto;
+    padding: 25px;
+  }
+
+  .stream-icon {
+    width: 55px;
+    height: 55px;
+  }
+  .stream-icon svg {
+    font-size: 28px;
+  }
+
+  .stream-card h3 {
+    font-size: 18px;
+  }
+
+  .stream-card p {
+    font-size: 14px;
+  }
+}

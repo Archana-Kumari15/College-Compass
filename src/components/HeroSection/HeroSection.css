@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.hero{
+    position:relative;
+    width:100%;
+    height:calc(100vh - 86px);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
+    transition:all 0.8s ease;
+}
+
+.overlay{
+    position:absolute;
+    inset:0;
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,0.95) 0%,
+        rgba(255,255,255,0.88) 35%,
+        rgba(255,255,255,0.45) 65%,
+        rgba(255,255,255,0.1) 100%
+    );
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+    width:45%;
+    text-align:left;
+    max-width:600px;
+    margin-left:30px;
+}
+
+/* Tag */
+
+.tag{
+    display:inline-block;
+    background:#fff3ea;
+    color:#ff7a00;
+    border:1px solid #914c13;
+    padding:10px 22px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:20px;
+    margin-left: 0;
+}
+
+/* Heading */
+
+.hero h1{
+    color:#0A4AA6;
+    font-size:3rem;
+    font-weight:700;
+    line-height:1.05;
+    margin-bottom:18px;
+    text-align:left;
+}
+
+/* Paragraph */
+
+.hero p{
+    color:#4d4d4d;
+    font-size:1.3rem;
+    line-height:1.7;
+    margin-bottom:25px;
+    text-align:left;
+}
+
+/* Buttons */
+
+.hero-buttons{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.primary-btn{
+    background:#ff7a00;
+    color:#fff;
+    border:none;
+    padding:14px 28px;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:2s;
+}
+
+.primary-btn:hover{
+    transform:translateY(-2px);
+}
+
+.secondary-btn{
+    background:#fff;
+    color:#0A4AA6;
+    border:1px solid #d5ddeb;
+    padding:14px 28px;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:2s;
+}
+
+.secondary-btn:hover{
+    background:#f5f7fb;
+}
+
+/* Slider Dots */
+
+.dots{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:10px;
+    z-index:10;
+}
+
+.dot{
+    width:12px;
+    height:12px;
+    background:#bfcde2;
+    border-radius:50%;
+    cursor:pointer;
+    transition:2s;
+}
+
+.dot.active{
+    width:34px;
+    border-radius:20px;
+    background:#ff7a00;
+}
+
+/* Tablet */
+
+@media (max-width:992px){
+
+    .hero{
+        min-height:100vh;
+        height:auto;
+        padding:60px 0;
+    }
+
+    .hero-content{
+        width:90%;
+        max-width:100%;
+        margin:0 auto;
+        padding:0 20px;
+    }
+
+    .hero h1{
+        font-size:2.8rem;
+    }
+
+    .hero p{
+        font-size:15px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width:768px){
+
+    .hero-content{
+        width:100%;
+        margin:0;
+        padding:0 20px;
+    }
+
+    .tag{
+        font-size:14px;
+        padding:8px 18px;
+    }
+
+    .hero h1{
+        font-size:2.2rem;
+    }
+
+    .hero p{
+        font-size:14px;
+        line-height:1.6;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:stretch;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        width:100%;
+    }
+
+    .dots{
+        bottom:15px;
+    }
+}
+
+/* Small Mobile */
+
+@media (max-width:480px){
+
+    .hero h1{
+        font-size:1.8rem;
+    }
+
+    .hero p{
+        font-size:13px;
+    }
+
+    .primary-btn,
+    .secondary-btn{
+        font-size:14px;
+        padding:12px 20px;
+    }
+}
+.tags-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 40px;
+  gap: 25px;
+  border-top: 1px solid #edf1f7;
+  border-bottom: 1px solid #edf1f7;
+
+  width: 100%;
+  background: #fff;
+}
+
+.slide-tag {
+  border: none;
+  background: transparent;
+
+  font-size: 14px;
+  font-weight: 500;
+  color: #55637d;
+
+  cursor: pointer;
+  padding: 8px 20px;
+  border-radius: 30px;
+ margin-left: 0;
+  transition: .3s;
+}
+
+.slide-tag:hover {
+  color: #0b4ea2;
+}
+
+.active-tag {
+  background: #0b4ea2;
+  color: white;
+}
+
+@media(max-width:768px){
+
+  .tags-wrapper{
+      overflow-x:auto;
+      justify-content:flex-start;
+      padding:10px;
+  }
+
+  .slide-tag{
+      white-space:nowrap;
+      font-size:10px;
+  }
+}
