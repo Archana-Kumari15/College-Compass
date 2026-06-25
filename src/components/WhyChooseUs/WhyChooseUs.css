@@ -1,0 +1,155 @@
+/* ===========================
+   WHY CHOOSE US
+=========================== */
+
+.why-section{
+    background:#094186;
+    padding:60px 20px;
+}
+
+.why-container{
+    max-width:1450px;
+    margin:0 auto;
+
+    display:grid;
+    grid-template-columns:46% 54%;
+    align-items:center;
+    gap:50px;
+}
+
+/* Left */
+
+.why-left{
+    text-align:left;
+}
+
+.why-tag{
+    color:#ff7a00;
+    font-size:16px;
+    text-align:left;
+    font-weight:700;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    
+}
+
+
+.why-text{
+    font-size:16px;
+    margin-top: 90px;
+    max-width:700px;
+    margin-bottom:20px;
+    text-align:left;
+    color:#fff;
+}
+
+/* List */
+
+.why-list{
+    display:flex;
+    flex-direction:column;
+    gap:6px;
+}
+
+.why-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+
+    color:#fff;
+    font-size:15px;
+    /* font-weight:500; */
+}
+
+.check-circle{
+    width:40px;
+    height:40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#ff7a00;
+    flex-shrink:0;
+  
+}
+
+/* Right Grid */
+
+/* =======================
+   RIGHT SIDE STATS
+======================= */
+
+.stats-grid{
+    width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:20px;
+}
+
+.stat-card{
+    width:280px;
+    height:60px;
+    background:rgba(255,255,255,0.10);
+    border-radius:18px;
+    padding:30px 25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:flex-start;
+    transition:.3s ease;
+}
+
+.stat-card:hover{
+    background:rgba(255,255,255,0.16);
+    transform:translateY(-6px);
+}
+
+.stat-card h3{
+    margin:0;
+    color:#fff;
+    font-size:30px;
+    font-weight:800;
+    line-height:1;
+}
+
+.stat-card p{
+    margin-top:10px;
+    color:rgba(255,255,255,.75);
+    font-size:15px;
+    font-weight:500;
+}
+
+/* Responsive */
+
+@media (max-width:1100px){
+
+    .why-container{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    .stats-grid{
+        grid-template-columns:1fr;
+    }
+
+    .stat-card{
+        min-height:130px;
+        padding:24px;
+    }
+
+    .stat-card h3{
+        font-size:42px;
+    }
+
+    .stat-card p{
+        font-size:16px;
+    }
+
+}

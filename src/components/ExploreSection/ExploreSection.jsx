@@ -1,5 +1,6 @@
 import React from "react";
 import "./ExploreSection.css";
+
 import {
   FaGraduationCap,
   FaStethoscope,
@@ -82,7 +83,6 @@ const streams = [
 const ExploreSection = () => {
   return (
     <section className="explore-section">
-
       <div className="heading-area">
         <span className="sub-heading">
           EXPLORE BY STREAM
@@ -91,7 +91,8 @@ const ExploreSection = () => {
         <h2>Choose Your Field of Study</h2>
 
         <p>
-          From Engineering to Medical, we cover every major stream with expert guidance.
+          From Engineering to Medical, we cover every major stream with expert
+          guidance.
         </p>
       </div>
 
@@ -99,7 +100,7 @@ const ExploreSection = () => {
         {streams.map((item, index) => (
           <div className="stream-card" key={index}>
             <div
-              className={`icon-box ${
+              className={`stream-icon ${
                 item.active ? "active-icon" : ""
               }`}
             >
@@ -110,13 +111,12 @@ const ExploreSection = () => {
 
             <p>{item.desc}</p>
 
-            <a href="/">
+            <a href="/" className="view-link">
               View Colleges →
             </a>
           </div>
         ))}
       </div>
-
     </section>
   );
 };

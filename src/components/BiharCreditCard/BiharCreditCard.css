@@ -1,0 +1,179 @@
+.bscc-section {
+  background: #f7f9fc;
+  padding: 25px 18px;
+}
+
+.bscc-container {
+  max-width: 1700px;
+  max-height: 600px;
+  margin: auto;
+  background: #0047a3;
+  border-radius: 32px;
+  padding: 35px 45px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+/* LEFT */
+
+.bscc-left {
+  flex: 1;
+}
+
+.bscc-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 50px;
+  color: #ff7a00;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.bscc-left h2 {
+  color: white;
+
+  font-size: 38px;
+  line-height: 1.15;
+  font-weight: 700;
+
+  margin-bottom: 15px;
+}
+
+.bscc-left p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.85);
+
+  line-height: 1.3;
+  max-width: 620px;
+}
+
+.bscc-tags {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 6px 10px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  border-radius: 10px;
+
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.tag svg {
+  color: #ff7a00;
+}
+
+.apply-btn {
+  margin-top: 18px;
+
+  background: #ff7a00;
+  color: white;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 14px 24px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* RIGHT GRID */
+
+.bscc-right {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.stat-card {
+  background: rgba(255, 255, 255, 0.12);
+
+  border-radius: 18px;
+
+  padding: 15px;
+
+  min-height: 110px;
+}
+
+.stat-icon {
+  color: #ff7a00;
+  width: 20px;
+  height: 20px;
+}
+
+.stat-card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+  color: white;
+
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.stat-card p {
+  color: rgba(255, 255, 255, 0.75);
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* TABLET */
+
+@media (max-width: 1200px) {
+  .bscc-container {
+    flex-direction: column;
+    padding: 35px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .bscc-container {
+    padding: 25px;
+    gap: 30px;
+  }
+
+  .bscc-left h2 {
+    font-size: 32px;
+  }
+
+  .bscc-left p {
+    font-size: 14px;
+  }
+
+  .bscc-right {
+    grid-template-columns: 1fr;
+  }
+
+  .apply-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

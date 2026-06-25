@@ -1,0 +1,187 @@
+/* =========================
+   STUDY ABROAD SECTION
+========================= */
+
+.study-section{
+    background:#fff;
+    padding:70px 20px 80px;
+}
+
+.study-container{
+    max-width:1450px;
+    margin:auto;
+}
+
+/* =========================
+   Header
+========================= */
+
+.study-header{
+    text-align:center;
+    margin-bottom:55px;
+}
+
+.study-tag{
+    color:#ff7300;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    
+}
+
+.study-header h2{
+    margin:5px 0 10px;
+    color:#0047a3;
+    font-size:30px;
+    font-weight:700;
+    line-height:1.5;
+}
+
+.study-header p{
+    max-width:760px;
+    margin:auto;
+    color:#667085;
+    font-size:15px;
+    line-height:1.3;
+}
+
+/* =========================
+   Grid
+========================= */
+
+.study-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+}
+
+/* =========================
+   Card
+========================= */
+
+.study-card{
+    background:#fff;
+    border:1px solid #e7edf5;
+    border-radius:22px;
+    padding:32px 18px;
+
+    text-align:center;
+    box-shadow:0 8px 24px rgba(0,0,0,.06);
+    transition:.35s;
+}
+
+.study-card:hover{
+    transform:translateY(-8px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.10);
+}
+
+/* =========================
+   Flag
+========================= */
+
+.study-card img{
+    width:40px;
+    height:40px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+/* If using emoji instead */
+
+.flag{
+    font-size:35px;
+    margin-bottom:26px;
+}
+
+/* =========================
+   Country Name
+========================= */
+
+.study-card h3{
+    color:#111827;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:7px;
+}
+
+/* =========================
+   Subtitle
+========================= */
+
+.study-card p{
+    color:#667085;
+    font-size:13px;
+    line-height:1;
+}
+
+/* =========================
+   Button
+========================= */
+
+.study-btn-wrapper{
+    display:flex;
+    justify-content:center;
+    margin-top:60px;
+}
+
+.study-btn{
+    background:#0047a3;
+    color:#fff;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+    font-size:18px;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.study-btn:hover{
+    background:#003985;
+}
+
+.study-btn svg{
+    width:24px;
+    height:24px;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media(max-width:1200px){
+
+.study-grid{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.study-header h2{
+font-size:38px;
+}
+
+.study-header p{
+font-size:15px;
+}
+
+.study-grid{
+grid-template-columns:1fr;
+}
+
+.study-card{
+padding:35px 18px;
+}
+
+}

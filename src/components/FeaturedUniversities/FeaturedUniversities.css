@@ -1,0 +1,234 @@
+.featured-section {
+  padding: 30px 20px;
+  background: #f7f9fc;
+}
+
+.featured-container {
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+/* Header */
+
+.featured-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 25px;
+}
+
+.featured-header-left {
+  text-align: left;
+}
+
+.featured-tag {
+  color: #ff7a00;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+}
+
+.featured-header h2 {
+  margin-top: 8px;
+  margin-bottom: 12px;
+
+  color: #0047a3;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.featured-header p {
+  color: #667085;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+
+
+/* Grid */
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+/* Card */
+
+.featured-card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid #e7edf5;
+  transition: 0.3s ease;
+
+}
+
+.featured-card:hover {
+  transform: translateY(-6px);
+  
+}
+
+/* Image */
+
+.featured-image {
+  position: relative;
+  height: 150px;
+}
+
+.featured-image img,
+.card-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:transform .5s ease;
+}
+
+.featured-card:hover .featured-image img,
+.university-card:hover .card-image img{
+    transform: scale(1.08);
+}
+
+.featured-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 50, 120, 0.85),
+    rgba(0, 50, 120, 0.15)
+  );
+}
+
+/* Badges */
+
+.badges {
+  position: absolute;
+  top: 16px;
+  left: 6px;
+
+  z-index: 2;
+  display: flex;
+  gap: 7px;
+}
+
+.badges span {
+  background: #ff7a00;
+  color: white;
+
+  padding: 3px 8px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* University Name */
+
+.featured-image h3 {
+  position: absolute;
+
+  left: 18px;
+  bottom: 13px;
+
+  z-index: 2;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Content */
+
+.featured-content {
+  padding: 14px 18px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #667085;
+  font-size: 12px;
+
+  margin-bottom: 12px;
+}
+
+.featured-content p{
+  margin-top: 14px;
+  color: #667085;
+  font-size: 13px;
+  line-height: 1.7;
+  align-items: center;
+  justify-content: left;
+  /* Show only 3 lines */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  /* Keeps all cards same height */
+  min-height: calc(1.7em * 3);
+}
+
+.card-footer {
+  margin-top: 16px;
+  padding-top: 14px;
+
+  border-top: 1px solid #edf1f5;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.open {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: #00b96b;
+  font-size: 12px;
+}
+
+.card-footer a {
+  text-decoration: none;
+
+  color: #ff7a00;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Responsive */
+
+@media (max-width: 1200px) {
+  .featured-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .featured-header h2 {
+    font-size: 28px;
+  }
+
+  .featured-image {
+    height: 200px;
+  }
+}

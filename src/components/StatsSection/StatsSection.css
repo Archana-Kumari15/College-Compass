@@ -1,57 +1,96 @@
 .stats-section {
   width: 100%;
-  background: #fff;
-  border-top: 1px solid #edf1f7;
-  border-bottom: 1px solid #edf1f7;
+  background: #f8fafc;
+  border-top: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
 }
 
 .stats-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding: 40px 40px;
 }
 
-.stat-card {
+.stat-item {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 18px;
 }
 
-.icon-box {
-  width: 50px;
-  height: 50px;
-  background: #f5f7fb;
-  border-radius: 14px;
-
+.stat-icon {
+  width: 64px;
+  height: 64px;
+  background: #eef2f7;
+  border-radius: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.icon-box svg {
-  font-size: 24px;
-  color: #0a4aa6;
+.stat-icon svg {
+  color: #0d4ea6;
+  width: 30px;
+  height: 30px;
 }
 
-.stat-card h2 {
-  font-size: 25px;
-  font-weight: 700;
-  color: #0a4aa6;
+.stat-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0d4ea6;
   line-height: 1;
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
-.stat-card p {
-  font-size: 13px;
-  color: #667085;
+.stat-title {
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
   line-height: 1.4;
 }
-.trusted-text {
-  border-top: 1px solid #edf1f7;
+
+.stats-footer {
   text-align: center;
-  padding: 22px;
-  font-size: 14px;
-  color: #667085;
+  border-top: 1px solid #e5e7eb;
+  padding: 24px 15px;
+  font-size: 15px;
   font-weight: 500;
+  color: #64748b;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .stats-container {
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .stats-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px 20px;
+  }
+
+  .stat-item {
+    width: 100%;
+  }
+
+  .stat-number {
+    font-size: 20px;
+  }
+
+  .stat-title {
+    font-size: 13px;
+  }
 }
