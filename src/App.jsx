@@ -10,7 +10,10 @@ import OnlineUniversities from "./components/OnlineUniversities/OnlineUniversiti
 import StudyAbroad from "./components/StudyAbroad/StudyAbroad";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Testimonials from "./components/Testimonials/Testimonials";
-
+import Counselling from "./components/Counselling/Counselling";
+import FAQ from "./components/FAQ/FAQ";
+import CallToAction from "./components/CallToAction/CallToAction";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -27,6 +30,10 @@ function App() {
       <StudyAbroad />
       <WhyChooseUs />
       <Testimonials />
+      <Counselling />
+      <FAQ />
+      <CallToAction />
+      <Footer />
     </>
   );
 }
