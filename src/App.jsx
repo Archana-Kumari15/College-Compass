@@ -7,6 +7,7 @@ import HowItWorks from "./components/HowItWorks/HowItWorks";
 import FeaturedUniversities from "./components/FeaturedUniversities/FeaturedUniversities";
 import PartnerUniversities from "./components/PartnerUniversities/PartnerUniversities";
 import OnlineUniversities from "./components/OnlineUniversities/OnlineUniversities";
+import KnowledgePartners from "./components/KnowledgePartners/KnowledgePartners";
 import StudyAbroad from "./components/StudyAbroad/StudyAbroad";
 import WhyChooseUs from "./components/WhyChooseUs/WhyChooseUs";
 import Testimonials from "./components/Testimonials/Testimonials";
@@ -14,6 +15,7 @@ import Counselling from "./components/Counselling/Counselling";
 import FAQ from "./components/FAQ/FAQ";
 import CallToAction from "./components/CallToAction/CallToAction";
 import Footer from "./components/Footer/Footer";
+import FooterBottom from "./components/FooterBottom/FooterBottom";
 
 function App() {
   return (
@@ -27,6 +29,7 @@ function App() {
       <FeaturedUniversities />
       <PartnerUniversities />
       <OnlineUniversities />
+      <KnowledgePartners />
       <StudyAbroad />
       <WhyChooseUs />
       <Testimonials />
@@ -34,6 +37,7 @@ function App() {
       <FAQ />
       <CallToAction />
       <Footer />
+      <FooterBottom />
     </>
   );
 }

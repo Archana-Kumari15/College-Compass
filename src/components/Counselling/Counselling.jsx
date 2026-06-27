@@ -4,9 +4,10 @@ import {
   CheckCircle,
   Phone,
   Mail,
-  MessageCircle,
   Send,
 } from "lucide-react";
+
+import { FaWhatsapp } from "react-icons/fa";
 
 const Counselling = () => {
   return (
@@ -68,12 +69,12 @@ const Counselling = () => {
             </a>
 
             <a
-              href="https://wa.me/917357050909"
-              className="contact-btn whatsapp-btn"
-            >
-              <MessageCircle size={24} />
-              <span>WhatsApp</span>
-            </a>
+  href="https://wa.me/917357050909"
+  className="contact-btn whatsapp-contact-btn"
+>
+  <FaWhatsapp size={24} />
+  <span>WhatsApp</span>
+</a>
 
           </div>
 

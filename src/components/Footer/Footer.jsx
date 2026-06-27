@@ -1,13 +1,13 @@
 import React from "react";
 import "./Footer.css";
+import { Phone, Mail } from "lucide-react";
+
 import {
-  Instagram,
-  Facebook,
-  Youtube,
-  LinkedinIcon,
-  Phone,
-  Mail,
-} from "lucide-react";
+  FaInstagram,
+  FaFacebookF,
+  FaYoutube,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 import logo from "../../assets/logo.png"; // Replace with your logo
 
@@ -27,10 +27,10 @@ const Footer = () => {
           </p>
 
           <div className="social-icons">
-            <a href="#"><Instagram /></a>
-            <a href="#"><Facebook /></a>
-            <a href="#"><Youtube /></a>
-            <a href="#"><LinkedinIcon /></a>
+            <a href="#"><FaInstagram /></a>
+            <a href="#"><FaFacebookF /></a>
+            <a href="#"><FaYoutube /></a>
+            <a href="#"><FaLinkedinIn /></a>
           </div>
 
         </div>

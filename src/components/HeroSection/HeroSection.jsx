@@ -11,7 +11,7 @@ const slides = [
   {
     tag: "Bihar Students",
     title: "Study in Top Colleges with Bihar Student Credit Card",
-    desc: "Get expert guidance for admissions, course selection, education loans and Bihar Student Credit Card applications.",
+    desc: "Get expert guidance for admissions, course selection, education loans, and Bihar Student Credit Card applications. Build your future without financial barriers.",
     image: slide1,
     btn1: "Apply Now",
     btn2: "Free Counselling",
@@ -20,7 +20,7 @@ const slides = [
   {
     tag: "Indian Students",
     title: "Your Dream College is Closer Than You Think",
-    desc: "We help Indian students secure admissions in top institutions across the country.",
+    desc: "From engineering and medical colleges to management and professional courses, we help Indian students secure admissions in top institutions across the country.",
     image: slide2,
     btn1: "Explore Colleges",
     btn2: "Talk to an Expert",
@@ -29,7 +29,7 @@ const slides = [
   {
     tag: "Global Admissions",
     title: "Study Abroad With Confidence",
-    desc: "Explore universities across USA, UK, Canada, Australia and Europe.",
+    desc: "Get expert assistance for university selection, applications, visas, scholarships, and education loans. Start your journey to top universities in the USA, UK, Canada, Australia, Europe, and beyond.",
     image: slide3,
     btn1: "Study Abroad",
     btn2: "Book Consultation",
@@ -38,7 +38,7 @@ const slides = [
   {
     tag: "Expert Consultancy",
     title: "Expert Counselling for Every Step",
-    desc: "Our experienced counsellors help you choose the right course and university.",
+    desc: "Our experienced counsellors help you choose the right course, university, scholarship opportunities, and career path based on your goals, interests, and future aspirations.",
     image: slide4,
     btn1: "Career Guidance",
     btn2: "Schedule Meeting",
@@ -47,7 +47,7 @@ const slides = [
   {
     tag: "End-to-End Support",
     title: "Admissions, Loans, Visas & Scholarships",
-    desc: "Everything from admission support to scholarships and visa guidance.",
+    desc: "From application submission and documentation to visa processing, education loans, scholarships, and pre-departure support, we handle everything for your success under one roof.",
     image: slide5,
     btn1: "Get Started",
     btn2: "Contact Us",

@@ -115,10 +115,6 @@
   color: #0047a3;
 }
 
-.whatsapp-btn {
-  background: #25d366;
-  color: #fff;
-}
 
 .phone-btn:hover,
 .email-btn:hover {
@@ -126,14 +122,18 @@
   transform: translateY(-3px);
 }
 
-.whatsapp-btn:hover {
+.whatsapp-contact-btn {
+  background: #25d366;
+  color: #fff;
+}
+
+.whatsapp-contact-btn:hover {
   background: #20bd5a;
   transform: translateY(-3px);
 }
 
-.contact-btn svg {
-  width: 20px;
-  height: 20px;
+.whatsapp-contact-btn svg {
+  color: #fff;
 }
 
 /* ===========================

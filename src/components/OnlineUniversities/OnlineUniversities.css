@@ -3,8 +3,8 @@
 =========================== */
 
 .online-section{
-    background:#ffffff;
-    padding:60px 20px;
+    background:#fefdfd;
+    padding:10px 20px;
 }
 
 .online-container{
@@ -25,14 +25,15 @@
 
 .category-line{
     width:4px;
-    height:55px;
+    height:65px;
     background:#ff7a00;
     border-radius:8px;
 }
 
 .title{
     display:flex;
-    align-items:center;
+    align-items:flex-start;
+    text-align: left;
     gap:8px;
     margin-bottom:5px;
 }
@@ -69,6 +70,7 @@
     display:grid;
     grid-template-columns:repeat(3,1fr);
     gap:22px;
+    align-items:start;
 }
 
 /* ===========================
@@ -76,12 +78,15 @@
 =========================== */
 
 .online-card{
+    
     background:#fff;
     border:1px solid #e8edf5;
     border-radius:18px;
     overflow:hidden;
     box-shadow:0 4px 15px rgba(0,0,0,.06);
-    transition:.35s ease;
+    
+    display:flex;
+    flex-direction:column;
 }
 
 .online-card:hover{
@@ -134,7 +139,7 @@
     background:#ff7a00;
     color:#fff;
 
-    padding:6px 14px;
+    padding:3px 10px;
 
     border-radius:30px;
 
@@ -164,6 +169,7 @@
 
 .card-content{
     padding:16px 18px;
+  
 }
 
 .location{
@@ -185,57 +191,59 @@
     color:#667085;
     font-size:13px;
     line-height:1.6;
-
-    display:-webkit-box;
-    -webkit-line-clamp:3;
-    -webkit-box-orient:vertical;
+    text-align:left;
 
     overflow:hidden;
-    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:3;
 
-    min-height:62px;
+    margin:10px 0 12px;
 }
+
 
 /* ===========================
    Footer
 =========================== */
 
-.footer{
-    margin-top:14px;
-    padding-top:14px;
+/* ===========================
+   Card Footer
+=========================== */
 
-    border-top:1px solid #edf1f5;
-
+.card-footer{
     display:flex;
     justify-content:space-between;
     align-items:center;
+
+    padding-top:10px;
+    margin-top:10px;
+
+    border-top:1px solid #e5e7eb;
 }
 
-.open{
+.admission-open{
     display:flex;
     align-items:center;
-    gap:5px;
+    gap:6px;
 
     color:#00b96b;
-
     font-size:12px;
     font-weight:500;
 }
 
-.open svg{
+.admission-open svg{
     width:14px;
     height:14px;
 }
 
-.footer a{
+.view-details{
     color:#ff7a00;
     text-decoration:none;
-
     font-size:13px;
     font-weight:600;
 }
 
-.footer a:hover{
+.view-details:hover{
     text-decoration:underline;
 }
 

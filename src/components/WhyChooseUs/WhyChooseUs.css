@@ -4,7 +4,7 @@
 
 .why-section{
     background:#094186;
-    padding:60px 20px;
+    padding:50px 20px;
 }
 
 .why-container{
@@ -14,7 +14,7 @@
     display:grid;
     grid-template-columns:46% 54%;
     align-items:center;
-    gap:50px;
+    gap:30px;
 }
 
 /* Left */
@@ -32,7 +32,6 @@
     text-transform:uppercase;
     
 }
-
 
 .why-text{
     font-size:16px;
@@ -90,7 +89,7 @@
     height:60px;
     background:rgba(255,255,255,0.10);
     border-radius:18px;
-    padding:30px 25px;
+    padding:20px 25px;
     display:flex;
     flex-direction:column;
     justify-content:center;

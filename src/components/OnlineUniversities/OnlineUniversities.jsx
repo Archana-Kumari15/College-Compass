@@ -10,55 +10,59 @@ import smu from "../../assets/smu.jpg";
 import vgu from "../../assets/vgupic.jpg";
 
 const universities = [
-    {
+  {
     name: "VGU",
-    location: "Online (UGC-DEB Entitled)",
+    location: "Jaipur, Rajasthan",
     image: vgu,
     description:
-      "Recognized online university offering industry-ready undergraduate and postgraduate programmes.",
+      "Vivekananda Global University (VGU), Jaipur is a UGC-recognised private university offering undergraduate and postgraduate programmes across Engineering, Management, Law, Pharmacy, Design, Agriculture and many other disciplines. The university is known for its modern campus, industry collaborations, excellent placements and student-focused learning environment.",
     badge: "Online",
   },
+
   {
     name: "Amity Online",
     location: "Online (UGC-DEB Entitled)",
     image: amity,
     description:
-      "One of India's top private universities. Amity Online offers UGC-entitled online degrees with live and recorded classes.",
+      "One of India's top private universities, Amity University Online offers UGC-DEB approved online undergraduate and postgraduate degree programmes with live classes, recorded lectures, industry mentors, placement assistance and flexible learning for students as well as working professionals.",
     badge: "Online",
   },
+
   {
     name: "Manipal Online",
     location: "Online (UGC-DEB Entitled)",
     image: manipal,
     description:
-      "Online degrees from a trusted brand with industry-aligned UG and PG programmes.",
+      "Online degrees from Manipal University Jaipur through Online Manipal provide industry-aligned undergraduate and postgraduate programmes with expert faculty, career support, live classes, recorded lectures and recognised UGC-entitled qualifications.",
     badge: "Online",
   },
+
   {
     name: "LPU Online",
     location: "Online (UGC-DEB Entitled)",
     image: lpu,
     description:
-      "Online UG and PG programmes with flexible schedules and career support.",
+      "LPU Online offers UGC-entitled undergraduate and postgraduate programmes with flexible schedules, interactive learning, digital study material, placement assistance and career guidance designed for students and working professionals.",
     badge: "Online",
   },
+
   {
     name: "CU Online",
     location: "Online (UGC-DEB Entitled)",
     image: cu,
     description:
-      "Flexible online learning with UGC-approved degree programmes for working professionals.",
+      "Chandigarh University Online provides flexible UGC-approved online degree programmes with experienced faculty, modern digital learning platforms, industry-oriented curriculum, placement support and affordable education for learners across India.",
     badge: "Online",
   },
+
   {
     name: "SMU",
     location: "Online / Distance",
     image: smu,
     description:
-      "Sikkim Manipal University offers quality online and distance education across India.",
+      "Sikkim Manipal University is a pioneer in online and distance education, offering recognised undergraduate and postgraduate programmes with flexible learning, quality faculty, affordable fees and nationwide student support services.",
     badge: "Online",
   },
-  
 ];
 
 export default function OnlineUniversities() {
@@ -112,14 +116,16 @@ export default function OnlineUniversities() {
 
               <p>{college.description}</p>
 
-              <div className="footer">
+              <div className="card-footer">
 
-                <span className="open">
+                <span className="admission-open">
                   <CheckCircle size={15} />
                   Admission Open
                 </span>
 
-                <a href="/">View Details →</a>
+                <a href="/" className="view-details">
+                   View Details →
+                </a>
 
               </div>
 
