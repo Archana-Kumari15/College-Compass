@@ -86,7 +86,7 @@
 
 .stat-card{
     width:280px;
-    height:60px;
+    height:110px;
     background:rgba(255,255,255,0.10);
     border-radius:18px;
     padding:20px 25px;
@@ -134,21 +134,112 @@
 
 @media (max-width:768px){
 
+    .why-section{
+        padding:50px 18px;
+    }
+
+    .why-container{
+        display:flex;
+        flex-direction:column;
+        gap:35px;
+    }
+
+    /* Left */
+
+    .why-left{
+        width:100%;
+    }
+
+    .why-tag{
+        font-size:15px;
+        letter-spacing:2px;
+    }
+
+    .why-text{
+        margin-top:22px;
+        margin-bottom:28px;
+        font-size:16px;
+        line-height:1.6;
+        max-width:100%;
+    }
+
+    .why-list{
+        gap:16px;
+    }
+
+    .why-item{
+        align-items:flex-start;
+        font-size:16px;
+        line-height:1.5;
+    }
+
+    .check-circle{
+        width:28px;
+        height:28px;
+        margin-top:2px;
+    }
+
+    /* Right Cards */
+
     .stats-grid{
-        grid-template-columns:1fr;
+        width:100%;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);   /* 2 cards */
+        gap:16px;
     }
 
     .stat-card{
-        min-height:130px;
-        padding:24px;
+        width:100%;          /* remove fixed width */
+        height:160px;
+        padding:20px;
+        border-radius:18px;
     }
 
     .stat-card h3{
-        font-size:42px;
+        font-size:34px;
+        line-height:1.1;
+        margin-bottom:10px;
     }
 
     .stat-card p{
-        font-size:16px;
+        font-size:15px;
+        line-height:1.4;
+        margin:0;
+    }
+}
+
+@media (max-width:480px){
+
+    .why-section{
+        padding:30px 14px;
     }
 
+    .why-tag{
+        font-size:14px;
+    }
+
+    .why-text{
+        font-size:15px;
+        margin-top:18px;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .stat-card{
+        width:100%;
+        height:140px;
+        padding:16px;
+    }
+
+    .stat-card h3{
+        font-size:30px;
+    }
+
+    .stat-card p{
+        font-size:14px;
+        line-height:1.3;
+    }
 }

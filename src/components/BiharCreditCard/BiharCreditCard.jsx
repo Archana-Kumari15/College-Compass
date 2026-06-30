@@ -25,7 +25,7 @@ const BiharCreditCard = () => {
 
           <h2>
             Study with Bihar Student
-            <br />
+          
             Credit Card
           </h2>
 
@@ -56,7 +56,7 @@ const BiharCreditCard = () => {
           </div>
 
           <button className="apply-btn">
-            Learn More & Apply
+            <span>Learn More & Apply</span>
             <ArrowRight size={22} />
           </button>
         </div>
@@ -65,31 +65,31 @@ const BiharCreditCard = () => {
 
         <div className="bscc-right">
 
-          <div className="stat-card">
-            <IndianRupee className="stat-icon" />
-            <h3>₹4 Lakh</h3>
-            <p>Maximum Loan</p>
-          </div>
+  <div className="bscc-stat-card">
+    <IndianRupee className="bscc-stat-icon" />
+    <h3 className="bscc-stat-title">₹4 Lakh</h3>
+    <p className="bscc-stat-text">Maximum Loan</p>
+  </div>
 
-          <div className="stat-card">
-            <Percent className="stat-icon" />
-            <h3>4%</h3>
-            <p>Simple Interest</p>
-          </div>
+  <div className="bscc-stat-card">
+    <Percent className="bscc-stat-icon" />
+    <h3 className="bscc-stat-title">4%</h3>
+    <p className="bscc-stat-text">Simple Interest</p>
+  </div>
 
-          <div className="stat-card">
-            <ShieldCheck className="stat-icon" />
-            <h3>₹0</h3>
-            <p>Guarantor Needed</p>
-          </div>
+  <div className="bscc-stat-card">
+    <ShieldCheck className="bscc-stat-icon" />
+    <h3 className="bscc-stat-title">₹0</h3>
+    <p className="bscc-stat-text">No Guarantor Needed</p>
+  </div>
 
-          <div className="stat-card">
-            <GraduationCap className="stat-icon" />
-            <h3>All</h3>
-            <p>Courses Covered</p>
-          </div>
+  <div className="bscc-stat-card">
+    <GraduationCap className="bscc-stat-icon" />
+    <h3 className="bscc-stat-title">All</h3>
+    <p className="bscc-stat-text">Courses Covered</p>
+  </div>
 
-        </div>
+</div>
       </div>
     </section>
   );

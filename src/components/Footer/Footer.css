@@ -130,42 +130,112 @@ gap:50px;
 
 }
 
-@media(max-width:768px){
-
-.footer{
-padding:50px 20px;
-}
+@media (max-width:768px){
 
 .footer-container{
-grid-template-columns:1fr;
-gap:40px;
+    display:flex;
+    flex-direction:column;
+    gap:32px;
 }
 
-.footer-logo{
-width:150px;
+.footer-section{
+    padding:45px 18px;
 }
 
-.footer-brand p{
-font-size:16px;
+.footer-logo img{
+    width:140px;     
+    height:auto;
 }
 
-.footer-col h3{
-font-size:20px;
-margin-bottom:22px;
+
+.footer-about p{
+    font-size:14px;
+    line-height:1.6;
+    max-width:260px;
+    margin-top:16px 0;
 }
 
-.footer-col ul li{
-font-size:16px;
-margin-bottom:15px;
+
+.footer-social{
+    gap:14px;
+    margin-top:16px;
 }
 
-.contact-item{
-font-size:16px;
+.footer-social svg{
+    width:24px;
+    height:24px;
 }
 
-.social-icons svg{
-width:26px;
-height:26px;
+.footer-column{
+    width:100%;
 }
 
+.footer-column h3{
+    font-size:18px;  
+    margin-bottom:18px;
+}
+
+
+.footer-column ul li{
+    margin-bottom:12px;
+}
+
+.footer-column ul li a{
+    font-size:14px;
+}
+
+.footer-contact p{
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+}
+
+@media (max-width:480px){
+
+.footer-section{
+    padding:35px 14px;
+}
+
+/* Logo */
+
+.footer-logo img{
+    width:120px;
+}
+
+/* Description */
+
+.footer-about p{
+    font-size:13px;
+    line-height:1.5;
+    max-width:230px;
+}
+
+/* Social Icons */
+
+.footer-social{
+    gap:14px;
+}
+
+.footer-social svg{
+    width:22px;
+    height:22px;
+}
+
+/* Quick Links Heading */
+
+.footer-column h3{
+    font-size:16px;
+    margin-bottom:16px;
+}
+
+/* Links */
+
+.footer-column ul li{
+    margin-bottom:12px;
+}
+
+.footer-column ul li a{
+    font-size:13px;
+}
 }

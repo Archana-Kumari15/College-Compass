@@ -185,52 +185,143 @@ grid-template-columns:repeat(2,1fr);
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
 .testimonial-section{
-padding:70px 20px;
+    padding:50px 18px;
+}
+
+.testimonial-header{
+    margin-bottom:40px;
 }
 
 .testimonial-header h2{
-font-size:42px;
+    font-size:38px;
+    line-height:1.2;
+    margin:12px 0 18px;
 }
 
 .testimonial-header p{
-font-size:17px;
+    font-size:16px;
+    line-height:1.6;
+    max-width:420px;
+    margin:auto;
 }
 
 .testimonial-grid{
-grid-template-columns:1fr;
-gap:25px;
+    display:grid;
+    grid-template-columns:1fr;
+    gap:24px;
 }
 
 .testimonial-card{
-padding:28px;
+    padding:28px 24px;
+    border-radius:22px;
 }
 
-.review{
-font-size:17px;
-min-height:auto;
+.quote-icon{
+    font-size:42px;
+    margin-bottom:20px;
 }
 
-.avatar{
-width:55px;
-height:55px;
-font-size:28px;
-}
-
-.student-details h4{
-font-size:17px;
-}
-
-.student-details span{
-font-size:15px;
+.testimonial-text{
+    text-align:left;
+    font-size:18px;
+    line-height:1.7;
 }
 
 .testimonial-footer{
-flex-direction:column;
-align-items:flex-start;
-gap:18px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:26px;
 }
 
+.student-info{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.student-avatar{
+    width:54px;
+    height:54px;
+}
+
+.student-name{
+    font-size:22px;
+}
+
+.student-course{
+    font-size:16px;
+}
+
+.stars{
+    display:flex;
+    gap:3px;
+}
+}
+
+
+@media (max-width:480px){
+
+.testimonial-section{
+    padding:40px 14px;
+}
+
+.testimonial-header h2{
+    font-size:30px;
+    line-height:1.25;
+}
+
+.testimonial-header p{
+    font-size:15px;
+    line-height:1.6;
+}
+
+.testimonial-card{
+    padding:24px 18px;
+}
+
+.quote-icon{
+    font-size:38px;
+}
+
+.testimonial-text{
+    text-align:left;
+    font-size:16px;
+    line-height:1.7;
+}
+
+.testimonial-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-direction:row;      /* name left, stars right */
+}
+
+.student-info{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.student-avatar{
+    width:52px;
+    height:52px;
+}
+
+.student-name{
+    font-size:18px;
+}
+
+.student-course{
+    font-size:15px;
+}
+
+.stars{
+    display:flex;
+    gap:2px;
+    font-size:15px;
+}
 }

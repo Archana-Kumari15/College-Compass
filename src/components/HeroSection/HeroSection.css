@@ -22,15 +22,17 @@ body,
 .hero{
     position:relative;
     width:100%;
-    height:calc(100vh - 6px);
+    height:90vh;
     margin-top:6px;
-
+    min-height: 700px;
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
-
     display:flex;
-    align-items:center;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    text-align: left;
     overflow:hidden;
 }
 
@@ -53,6 +55,7 @@ body,
     max-width:500px;
     margin-left:30px;
     text-align:left;
+    margin-bottom: 10px;
 }
 
 /* ================= Tag Pill ================= */
@@ -66,7 +69,7 @@ body,
     color:#ff7a00;
     font-size:15px;
     font-weight:500;
-    margin-bottom:-1200px;
+    margin-bottom:20px;
 }
 
 /* ================= Heading ================= */
@@ -131,16 +134,17 @@ body,
 .dots{
     position:absolute;
     bottom:20px;
-    left:50%;
-    transform:translateX(-50%);
+    /* left:50%; */
+    transform:none;
     display:flex;
     gap:10px;
     z-index:5;
+    margin-top: 18px;
 }
 
 .dot{
-    width:12px;
-    height:12px;
+    width:9px;
+    height:9px;
     border-radius:50%;
     background:#c6d2e5;
     cursor:pointer;
@@ -148,7 +152,8 @@ body,
 }
 
 .dot.active{
-    width:35px;
+    width:24px;
+    height: 8px;
     border-radius:30px;
     background:#ff7a00;
 }
@@ -188,71 +193,178 @@ body,
 
 /* ================= Responsive ================= */
 
-@media(max-width:992px){
+/* ================= Tablet ================= */
 
-    .hero{
-        height:auto;
-        min-height:100vh;
-        padding:60px 0;
-    }
+@media (max-width:992px){
 
-    .hero-content{
-        width:90%;
-        margin:auto;
-    }
-
-    .hero h1{
-        font-size:2.5rem;
-    }
-
-    .hero p{
-        font-size:16px;
-    }
+.hero{
+    min-height:100vh;
+    height:auto;
+    padding:60px 0;
+    background-position:center;
 }
 
-@media(max-width:768px){
-
-    .hero-content{
-        width:100%;
-        padding:0 20px;
-    }
-
-    .hero h1{
-        font-size:2rem;
-    }
-
-    .hero p{
-        font-size:15px;
-    }
-
-    .hero-buttons{
-        flex-direction:column;
-    }
-
-    .primary-btn,
-    .secondary-btn{
-        width:100%;
-    }
-
-    .tags-wrapper{
-        overflow-x:auto;
-        white-space:nowrap;
-        padding:12px;
-    }
-
-    .slide-tag{
-        flex-shrink:0;
-        font-size:14px;
-    }
+.hero-content{
+    width:85%;
+    max-width:520px;
+    margin-left:35px;
 }
 
-@media(max-width:480px){
+.hero h1{
+    font-size:2.6rem;
+}
 
-    .hero h1{
-        font-size:1.7rem;
-    }
+.hero p{
+    font-size:17px;
+    line-height:1.7;
+}
 
-    .hero p{
-        font-size:14px;
-    }
+}
+
+
+/* ================= Mobile ================= */
+
+@media (max-width:768px){
+
+.hero{
+    height:100vh;
+    min-height:100vh;
+    padding:0;
+    align-items:center;
+    background-size:cover;
+    background-position:76% center;
+}
+
+.overlay{
+    background:linear-gradient(
+        90deg,
+        rgba(255,255,255,.97) 0%,
+        rgba(255,255,255,.93) 35%,
+        rgba(255,255,255,.60) 65%,
+        rgba(255,255,255,0) 100%
+    );
+}
+
+.hero-content{
+    width:92%;
+    max-width:420px;
+    margin-left:18px;
+    padding-right:15px;
+}
+
+.tag-pill{
+    padding:8px 18px;
+    font-size:14px;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:34px;
+    line-height:1.22;
+    margin-bottom:18px;
+}
+
+.hero p{
+    width:100%;
+    max-width:none;
+    font-size:16px;
+    line-height:1.75;
+    margin-bottom:24px;
+}
+
+.hero-buttons{
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    gap:14px;
+    margin-bottom: 8px;
+}
+
+.primary-btn,
+.secondary-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    width:auto;
+    min-width:210px;
+    height:58px;
+
+    padding:0 30px;
+
+    font-size:17px;
+    font-weight:600;
+
+    border-radius:12px;
+    white-space:nowrap;
+}
+
+.dots{
+    bottom:55px;
+    /* gap:8px; */
+}
+
+.dot{
+    width:8px;
+    height:8px;
+}
+
+.dot.active{
+    width:24px;
+    height:8px;
+}
+
+.tags-wrapper{
+    overflow-x:auto;
+    white-space:nowrap;
+    padding:16px;
+}
+
+.slide-tag{
+    flex-shrink:0;
+}
+
+}
+
+
+/* ================= Small Mobile ================= */
+
+@media (max-width:480px){
+
+.hero{
+    background-position:78% center;
+}
+
+.hero-content{
+    width:92%;
+    max-width:360px;
+    margin-left:16px;
+}
+
+.hero h1{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:15px;
+    line-height:1.75;
+}
+
+.primary-btn,
+.secondary-btn{
+    min-width:190px;
+    height:54px;
+    padding:0 26px;
+    font-size:16px;
+}
+
+.tag-pill{
+    font-size:13px;
+    padding:7px 16px;
+}
+
+.dots{
+    bottom:38px;
+}
+
 }
